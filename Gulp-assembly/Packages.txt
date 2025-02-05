@@ -1,0 +1,36 @@
+Command to install all packages:
+=====================================
+npm i gulp gulp-sass sass gulp-file-include gulp-clean gulp-server-livereload gulp-sourcemaps gulp-plumber gulp-notify gulp-group-css-media-queries gulp-babel @babel/core @babel/preset-env webpack-stream style-loader css-loader gulp-imagemin@7 gulp-changed@4 gulp-webp@4 gulp-webp-html gulp-webp-css gulp-sass-glob gulp-autoprefixer@8 gulp-csso gulp-htmlclean gulp-webp-css gulp-webp-html gulp-sass-glob gulp-fonter --save-dev
+npm i --global gulp-cli
+
+Description packages:
+gulp - actually Gulp itself
+gulp-sass - Compiling SASS / SCSS
+sass - Required for compiling SASS / SCSS
+gulp-file-include - Including files into each other (HTML include)
+gulp-clean - Deleting files
+gulp-server-livereload - Server with live reload
+gulp-sourcemaps - Source maps for CSS
+gulp-plumber - Fixing errors during build
+gulp-notify - Notifications
+gulp-group-css-media-queries - Grouping CSS media queries
+
+Importing JS plugins:
+=====================================
+Example with datepicker:
+npm i air-datepicker -S
+
+JS:
+import AirDatepicker from 'air-datepicker';
+import 'air-datepicker/air-datepicker.css';
+
+document.addEventListener('DOMContentLoaded', () => {
+	new AirDatepicker('#my-element');
+});
+
+HTML:
+<input type="text" id="my-element">
+
+npm init = download package.json
+npm i gulp-cli -g = download GULP
+npm i gulp -D
